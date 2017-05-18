@@ -1,6 +1,6 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
-const pass = require("./pw.js")
+// const pass = require("./pw.js")
 var connection;
 
 if(process.env.JAWSDB_URL) {
