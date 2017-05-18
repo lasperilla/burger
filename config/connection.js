@@ -1,5 +1,7 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
+const path = require("path");
+const pass = require(path.join(__dirname, "pw.js"))
 // const pass = require("./pw.js")
 var connection;
 
