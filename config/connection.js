@@ -1,13 +1,13 @@
 // Set up MySQL connection.
 const mysql = require("mysql");
 const path = require("path");
-const pass = require(path.join(__dirname, "pw.js"))
 // const pass = require("./pw.js")
 var connection;
 
 if(process.env.JAWSDB_URL) {
   connection = mysql.createConnection(process.env.JAWSDB_URL)
 } else {
+  const pass = require(path.join(__dirname, "pw.js"))
   connection = mysql.createConnection({
     host: "127.0.0.1",
     port: 3306,
